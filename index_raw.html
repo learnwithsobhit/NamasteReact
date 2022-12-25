@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React!</title>
+</head>
+<body>
+    <div>
+        <h1>"Welcome to React!"</h1>
+    </div>
+    <div id = "root"></div>
+    <div id = "root2"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        const header = document.createElement("h2")
+        header.innerHTML = "Namaste from Shobhit!"
+        let root = document.getElementById("root")
+        root.appendChild(header)
+    </script>
+    <script>
+        const header2 = React.createElement("h2",{id:"head1",key : "h1"},"I am from Bangalore")
+        const header3 = React.createElement("h3",{id:"head2",key : "h2"},"I love Javascript")
+        const root_dom = ReactDOM.createRoot(document.getElementById("root2"))
+        root_dom.render([header2,header3])
+    </script>
+    
+
+    
+</body>
+</html>
