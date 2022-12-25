@@ -2,3 +2,15 @@
     text-align: center;
     color: orange;
 }
+
+.text {
+    text-align: left;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.container {
+    text-align: left;
+    color: orange;
+}
