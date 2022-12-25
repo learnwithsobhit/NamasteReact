@@ -4,4 +4,7 @@ root.render(reactElement)
 
 const paragraphElement = React.createElement("p", {className:"text",key : "test_p"},  "Chapter 01-Inception");
 const container = React.createElement("div", {className:"container",key: "test_div"}, [reactElement, paragraphElement])
-root.render(container);
+
+const testheader = React.createElement("h2",{className:"text",key:"test_text"},"I am outside Container!")
+
+root.render([container,testheader]);

@@ -1,6 +1,6 @@
 .namaste {
     text-align: center;
-    color: orange;
+    color: navy;
 }
 
 .text {
@@ -13,4 +13,5 @@
 .container {
     text-align: left;
     color: orange;
+    background-color: aqua;
 }
