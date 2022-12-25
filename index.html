@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Namaste React - Inception</title>
 </head>
-
 <body>
+    <h1>Namaste React using HTML </h1>
+    <div id="root">
+            
+    </div>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+  <script>
+      const selector = document.querySelector("#root");
+      const element = document.createElement("h1");
+      element.innerHTML = "Namste React using JavaScript";
+      selector.appendChild(element);
 
-</body>
+  </script>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script src="main.js"></script>
+  </body>
 </html>
