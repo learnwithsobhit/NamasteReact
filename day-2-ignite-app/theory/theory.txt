@@ -1,0 +1,9 @@
+Dev server
+Hot reloading
+Development target
+Lazy mode
+Caching
+HTTPS
+API proxy
+File watcher
+Auto install
