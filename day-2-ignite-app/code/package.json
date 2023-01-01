@@ -2,7 +2,7 @@
   "name": "ignite-app",
   "version": "1.0.0",
   "description": "create react app",
-  "main": "App.js",
+  "main": ".out/ignite-app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
