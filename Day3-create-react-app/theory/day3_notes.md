@@ -10,4 +10,6 @@
     In practice, these assumptions are valid for almost all practical use cases.
 
     ##When diffing two trees, React first compares the two root elements. The behavior is different depending on the types of the root elements. (https://reactjs.org/docs/reconciliation.html)
+    
+  # Babel is compiler which create polyfill.
 
