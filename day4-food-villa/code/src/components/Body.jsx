@@ -18,18 +18,6 @@ const Body = () => {
   const [restaurants, setRestaurants] = useState(restaurantList);
   const [searchText, setSearchText] = useState("");
 
-  // useEffect(()=>{
-  //   if(searchText.length){
-  //     const data = filterData(searchText);
-  //     // update the state - restaurants
-  //     setRestaurants(data);
-  //     }
-  //     else{
-  //       setRestaurants(restaurantList);
-  //     }
-
-  // });
-
   return (
     <>
       <div className="search-container">
