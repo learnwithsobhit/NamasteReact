@@ -3,11 +3,11 @@ const Title = () => (
       <img
         className="logo"
         alt="logo"
-        src="https://yt3.ggpht.com/ytc/AMLnZu_EC-ECXAxRAixWGEfMsE1rdSoetBHyxmLNdtCB=s900-c-k-c0x00ffffff-no-rj"
+        src="https://dypdvfcjkqkg2.cloudfront.net/large/1396634-1884.png"
       />
     </a>
   );
-  
+  // https://dypdvfcjkqkg2.cloudfront.net/large/1396634-1884.png
   const Header = () => {
     return (
       <div className="header">
