@@ -1,6 +1,6 @@
 import { restaurantList } from "../content";
 import RestaurantCard from "./RestaurantCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // What is state
 // what is React Hooks? - functions,
@@ -18,6 +18,18 @@ const Body = () => {
   const [restaurants, setRestaurants] = useState(restaurantList);
   const [searchText, setSearchText] = useState("");
 
+  // useEffect(()=>{
+  //   if(searchText.length){
+  //     const data = filterData(searchText);
+  //     // update the state - restaurants
+  //     setRestaurants(data);
+  //     }
+  //     else{
+  //       setRestaurants(restaurantList);
+  //     }
+
+  // });
+
   return (
     <>
       <div className="search-container">
@@ -28,6 +40,15 @@ const Body = () => {
           value={searchText}
           onChange={(e) => {
             setSearchText(e.target.value);
+            const text = e.target.value.toString()
+            if(text.length){
+              const data = filterData(text);
+              // update the state - restaurants
+              setRestaurants(data);
+            }
+            else{
+                setRestaurants(restaurantList);
+            }
           }}
         />
         <button
