@@ -59,7 +59,7 @@ const NestedComponent = function () {
         {header}
         {header_jsx}
         {header_jsx_attr}
-        { TitleComponent }{/* It does not work and warning is thrown in console since TitleComponent is a component and not a react element*/}
+        {/* { TitleComponent }It does not work and warning is thrown in console since TitleComponent is a component and not a react element */}
         { TitleComponent() }{/* It works as functional component is normal javascript function*/}
         { <TitleComponent /> } {/* It works since TitleComponent is enclosed within <> */}
         { <TitleComponent> </TitleComponent> } {/* It works since TitleComponent is enclosed within <> */}
@@ -84,6 +84,7 @@ const HeaderComponent = function (){
             <div className="avatar" key= "avatar_key">
             <div className="user-icon" key="user-icon"> </div>
             </div>
+            {console.log("I am inside console log")}
         </div>
     );
   }
