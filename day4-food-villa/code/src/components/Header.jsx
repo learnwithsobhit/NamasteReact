@@ -3,7 +3,7 @@ const Title = () => (
       <img
         className="logo"
         alt="logo"
-        src="https://dypdvfcjkqkg2.cloudfront.net/large/1396634-1884.png"
+        src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b00a857378033.560aa75ad3828.jpg"
       />
     </a>
   );
