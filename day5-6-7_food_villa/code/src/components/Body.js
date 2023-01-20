@@ -28,7 +28,7 @@ const Body = () => {
 
   async function getRestaurants() {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=27.4999736&lng=77.6829599&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
     setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
@@ -64,6 +64,7 @@ const Body = () => {
           Search
         </button>
       </div>
+      <div><h1>Searching {searchText} ...</h1></div>
       <div className="restaurant-list">
         {/* You have to write logic for NO restraunt fount here */}
         {filteredRestaurants.map((restaurant) => {

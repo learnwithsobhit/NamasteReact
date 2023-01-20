@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import { IMG_CDN_URL } from "../contants";
 import Shimmer from "./Shimmer";
 
-const RestaurantMenu = () => {
+const RestaurantMenu = ({test_props}) => {
+  const my_props = test_props
+  console.log(my_props)
   // how to read a dynamic URL params
   const { resId } = useParams();
   // Use proper names
