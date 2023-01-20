@@ -1,7 +1,7 @@
 {
-  "name": "namaste-react-live",
+  "name": "food-villa",
   "version": "1.0.0",
-  "description": "This is a live course",
+  "description": "This is a food order APP",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/namastedev/namaste-react-live.git"
+    "url": ""
   },
-  "author": "Akshay Saini",
+  "author": "Shobhit Chaturvedi",
   "license": "ISC",
   "bugs": {
-    "url": "https://bitbucket.org/namastedev/namaste-react-live/issues"
+    "url": ""
   },
-  "homepage": "https://bitbucket.org/namastedev/namaste-react-live#readme",
+  "homepage": "",
   "devDependencies": {
     "@babel/core": "^7.20.7",
     "babel-plugin-transform-remove-console": "^6.9.4",
