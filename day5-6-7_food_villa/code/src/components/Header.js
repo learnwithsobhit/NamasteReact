@@ -32,11 +32,7 @@ const Header = () => {
           <li>Cart</li>
         </ul>
       </div>
-      {isLoggedIn ? (
-        <button onClick={() => setIsLoggedIn(false)}>Logout</button>
-      ) : (
-        <button onClick={() => setIsLoggedIn(true)}>Login</button>
-      )}
+      {isLoggedIn ? (<Link to="/" onClick={() => setIsLoggedIn(false)}>Logout</Link>) : (<Link to="/login" onClick={() => setIsLoggedIn(true)}>Login</Link>)}
     </div>
   );
 };
